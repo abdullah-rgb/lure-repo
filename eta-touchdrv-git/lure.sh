@@ -12,7 +12,7 @@ deps_fedora=(dkms usbutils systemd)
 build_deps=(git)
 build_deps_debian=(git build-essential)
 build_deps_fedora=(git)
-maintainer="Abdullah C <deneme@deneme.deneme>"
+maintainer="Abdullah Cunuk <abdullahcunuk@hotmail.com>"
 
 prepare() {
 	git clone "${homepage}"
