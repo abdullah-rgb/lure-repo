@@ -32,16 +32,16 @@ package() {
 	$(install -Dm755 $srcdir/eta-touchdrv/usr/bin/* -t $pkgdir/usr/bin/)
 	
 	# lib files
-	$(install -Dm755 $srcdir/eta-touchdrv/usr/lib/systemd/system/* -t $pkgdir/usr/lib/systemd/system/)
-	$(install -Dm755 $srcdir/eta-touchdrv/usr/lib/udev/rules.d/* -t $pkgdir/usr/lib/udev/rules.d/)
+	$(install -Dm644 $srcdir/eta-touchdrv/usr/lib/systemd/system/* -t $pkgdir/usr/lib/systemd/system/)
+	$(install -Dm644 $srcdir/eta-touchdrv/usr/lib/udev/rules.d/* -t $pkgdir/usr/lib/udev/rules.d/)
 	
 	# src files
-	$(install -Dm755 $srcdir/eta-touchdrv/usr/src/eta-touchdrv/touch2/* -t $pkgdir/usr/src/eta-touchdrv/touch2/)
-	$(install -Dm755 $srcdir/eta-touchdrv/usr/src/eta-touchdrv/touch4/* -t $pkgdir/usr/src/eta-touchdrv/touch4/)
-	$(install -Dm755 $srcdir/eta-touchdrv/usr/src/eta-touchdrv/dkms.conf -t $pkgdir/usr/src/eta-touchdrv/)
-	$(install -Dm755 $srcdir/eta-touchdrv/usr/src/eta-touchdrv/version -t $pkgdir/usr/src/eta-touchdrv/)
+	$(install -Dm644 $srcdir/eta-touchdrv/usr/src/eta-touchdrv/touch2/* -t $pkgdir/usr/src/eta-touchdrv/touch2/)
+	$(install -Dm644 $srcdir/eta-touchdrv/usr/src/eta-touchdrv/touch4/* -t $pkgdir/usr/src/eta-touchdrv/touch4/)
+	$(install -Dm644 $srcdir/eta-touchdrv/usr/src/eta-touchdrv/dkms.conf -t $pkgdir/usr/src/eta-touchdrv/)
+	$(install -Dm644 $srcdir/eta-touchdrv/usr/src/eta-touchdrv/version -t $pkgdir/usr/src/eta-touchdrv/)
 	
 	# share/doc files
-	$(install -Dm755 $srcdir/eta-touchdrv/usr/share/doc/eta-touchdrv/* -t $pkgdir/usr/share/doc/eta-touchdrv/)
-	$(install -Dm755 $srcdir/eta-touchdrv/usr/share/lintian/overrides/* -t $pkgdir/usr/share/lintian/overrides/)
+	$(install -Dm644 $srcdir/eta-touchdrv/usr/share/doc/eta-touchdrv/* -t $pkgdir/usr/share/doc/eta-touchdrv/)
+	$(install -Dm644 $srcdir/eta-touchdrv/usr/share/lintian/overrides/* -t $pkgdir/usr/share/lintian/overrides/)
 }
